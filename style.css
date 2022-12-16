@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap');
+
+:root{
+--background01:#000;
+--background02:rgb(3, 16, 54);
+--background03:rgb(88, 4, 4);
+--background04:rgb(2, 22, 85);
+--background05:rgb(71, 27, 2);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    background-color: var(--background02);
+    color: rgb(5, 5, 5);
+}
+
+.quotebox{
+    min-width:50%;
+    min-height: 51%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display:flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(149, 247, 154);
+    transition: ease-in-out 1s;
+    border-radius: 5px;
+    box-shadow: 5px 5px rgb(250, 246, 246), 1em 0 1em rgb(190, 253, 190);
+}
+
+.textstyle{
+    width: 100%;
+    text-align: center;
+    padding: 5% 5% 2% 5%;
+}
+.textstyle::before{
+    content: '" ';
+    font-size: xx-large;
+}
+.textstyle::after{
+    content: '"';
+    font-size: xx-large;
+}
+
+.author{
+    width: 100%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+    text-align: end;
+}
+.author::before{
+    content: "' ";
+}
+.author::after{
+    content: " '";
+}
+.btn-div{
+    display: flex;
+    width: 100%;
+    padding: 5px 0px 2px 0px; 
+    flex-direction: reverse;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    border: 1px;
+    background-color: transparent;
+    color:rgb(78, 185, 247);
+    height: 2rem;
+    width: fit-content;
+    align-self: flex-start;
+}
+
+.random{
+    width:auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    font-weight:bold;
+    background-color: rgb(78, 185, 247);
+    border-radius: 5px;
+    border: 1px solid rgb(23, 8, 226);
+    border: none;
+    cursor: pointer;
+}
+.random:hover{
+    background-color: black;
+    color: cornsilk;
+}
+
+.btn:hover{
+    color: black;
+}
